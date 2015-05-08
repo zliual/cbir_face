@@ -1,0 +1,20 @@
+#The framework for the FA-Sensor
+	
+	raw_images 
+--> face_parsing
+	{Haar transformation} 
+--> standarlized_gray_image
+	{resizing, histogram eualization}
+--> 3*3(4*4) area_patitioning
+	{balanced partitioning} 
+--> LBP histograms 
+    {local binary pattern extraction} 
+--> weighted matrix
+	{higher weight on key area, filter out the margins}
+--> feature vector
+	{connect the histograms}
+--> SVM(feature,label)
+	{standard svm}
+--> SVM training&tuning
+	{traing samples, kernal, C, gamma optimizing} 
+

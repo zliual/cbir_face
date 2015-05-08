@@ -1,0 +1,12 @@
+#The framework for the FA-Sensor
+	
+	raw_images 
+--> face_parsing 
+--> standarlized_gray_image
+--> 3*3(4*4) area_patitioning 
+--> LBP histograms  
+--> weighted matrix
+--> feature vector
+--> SVM(feature,label)
+--> SVM training&tuning 
+
